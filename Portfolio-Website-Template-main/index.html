@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <title>Sanket Patil</title>
+    <title>Rishabh Mishra Portfolio</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     
@@ -21,14 +21,11 @@
     <link rel="stylesheet" href="css/flaticon.css">
     <link rel="stylesheet" href="css/icomoon.css">
     <link rel="stylesheet" href="css/style.css">
-	<link rel="stylesheet" href="css/social.css">
 
 
 
 <style>
-*{
-	/* background-color: #252526; */
-}
+
 /*======================================
 //--//-->   ABOUT
 ======================================*/
@@ -56,7 +53,7 @@
 
 .skill-mf .progress .progress-bar {
   height: .7rem;
-  background-color: rgba(156,220,254,255);
+  background-color: #ffbd39;
 }
 
 
@@ -115,51 +112,14 @@
 
 </style>
 
-<!--  image -->
-<style>
-    .hero {
-      height: 100vh;
-      display: flex;
-      align-items: center;
-      color: #fff;
-    }
-    .hero .text-container {
-      flex: 1;
-      padding-left: 4em;
-      text-align: left;
-    }
-    .hero .image-container {
-      flex: 1;
-      display: flex;
-      justify-content: center;
-	  /* padding-right: 10px; */
-    }
-    .hero img {
-      max-width: 50%;
-      height: auto;
-      object-fit: cover;
-    }
-    .btn-outline-white {
-      display: inline-block;
-      padding: 10px 20px;
-      border-radius: 30px;
-      text-decoration: none;
-      font-weight: bold;
-      border: 2px solid #fff;
-      color: #fff;
-      background: transparent;
-      transition: background 0.3s;
-    }
-  </style>
-
 
   </head>
-  <body data-spy="scroll" data-target=".site-navbar-target" data-offset="250">
+  <body data-spy="scroll" data-target=".site-navbar-target" data-offset="300">
 	  
 	  
     <nav class="navbar navbar-expand-lg navbar-dark ftco_navbar ftco-navbar-light site-navbar-target" id="ftco-navbar">
 	    <div class="container">
-	      <a class="navbar-brand" href="index.html">Sanket's &nbsp; Portfolio</a>
+	      <a class="navbar-brand" href="index.html">Rishabh Mishra</a>
 	      <button class="navbar-toggler js-fh5co-nav-toggle fh5co-nav-toggle" type="button" data-toggle="collapse" data-target="#ftco-nav" aria-controls="ftco-nav" aria-expanded="false" aria-label="Toggle navigation">
 	        <span class="oi oi-menu"></span> Menu
 	      </button>
@@ -174,28 +134,71 @@
 	        </ul>
 	      </div>
 	    </div>
-	</nav>
-    
-
-
+	  </nav>
 	  <section id="home-section" class="hero">
-		<div class="text-container">
-			<span class="subheading" style="font-size: 1.5em; color: rgba(156,220,254,255);">Hello!</span>
-			<h1 class="mb-4 mt-3" style="font-size: 3em;">My name is <span style="color: rgba(156,220,254,255);">Sanket Patil</span></h1>
-		  <!-- <h2 style="font-size: 2em;">A web Developer</h2> -->
+		  <div class="home-slider  owl-carousel">
+	       <div class="slider-item ">
+	      	<div class="overlay"></div>
+	         <div class="container">
+	          <div class="row d-md-flex no-gutters slider-text align-items-end justify-content-end" data-scrollax-parent="true">
+	          	<div class="one-third js-fullheight order-md-last img" style="background-image:url(images/bg_1.png);">
+	          	 <div class="overlay"></div>
+	          	</div>
+		          <div class="one-forth d-flex  align-items-center ftco-animate" data-scrollax=" properties: { translateY: '70%' }">
+		          	<div class="text">
+		          		<span class="subheading">Hello!</span>
+			            <h1 class="mb-4 mt-3">I'm <span>Rishabh Mishra</span></h1>
 
-		  <span style="font-size:2em;"> and I'm passionate </span><span id="element" style="color: rgba(156,220,254,255); font-size: 2em;"></span>
-		  <br>
-		  <br>
-		  <p>
-			<a href="https://github.com/SanketPatilofficial" class="btn btn-outline-white" target="_blank" >My works</a>
-		  </p>
-		</div>
-		<div class="image-container">
-		  <img src="images/bg_1.png" alt="Background Image">
-		</div>
-	  </section>
+						<!-- Element to contain animated typing -->
+						<span id="typing-animation"></span>
 
+						<script>
+
+						// Initialize the typing animation
+						const typingAnimationElement = document.getElementById('typing-animation');
+
+						// Create an array of typing text
+						const typingTexts = [
+						'Engineer  ',
+						'YouTuber  ',
+						'Teacher   ',
+						];
+
+						// Create a function to display the typing animation for a given text
+						function playTypingAnimation(text) {
+						// Loop through each character and add it to the element
+						for (let i = 0; i < text.length; i++) {
+							setTimeout(() => {
+							typingAnimationElement.textContent += text[i];
+							}, i * 200); // Increase the delay to slow down the typing animation
+						}
+
+						// Once the animation is complete, reset the text and start over
+						setTimeout(() => {
+							typingAnimationElement.textContent = '';
+							playTypingAnimation(typingTexts[(typingTexts.indexOf(text) + 1) % typingTexts.length]);
+						}, text.length * 200);
+						}
+
+						// Start the typing animation loop
+						playTypingAnimation(typingTexts[0]);
+
+						</script>
+
+						<br>
+						<br>
+			            <h2>A Senior Data Analyst</h2>
+						<!-- <h2 class="d-flex" style="margin-bottom: 0">With over 5 years of experience</h2> -->
+						<!-- <br> -->
+			            <p><a href="https://www.youtube.com/@RishabhMishraOfficial" class="btn btn-primary py-3 px-4">YouTube</a> 
+							<a href="https://github.com/rishabhnmishra" class="btn btn-white btn-outline-white py-3 px-4">My works</a></p>
+		            </div>
+		          </div>
+	        	</div>
+	        </div>
+	      </div>
+		</div>
+    </section>
 
 
 
@@ -216,41 +219,41 @@
 									<!-- Details next to profile image -->
 									<div class="col-sm-6 col-md-7">
 									  <div class="about-info">
-										<p><span class="title-s">Name: </span> <span>Sanket Patil</span></p>
-										<p><span class="title-s">Job Role: </span> <span>Software Developer</span></p>
-										<p><span class="title-s">Experience: </span> <span>Fresher</span></p>
-										<p><span class="title-s">Address: </span> <span>Delhi, India</span></p>
+										<p><span class="title-s">Name: </span> <span>Rishabh Mishra</span></p>
+										<p><span class="title-s">Job Role: </span> <span>Senior Data Analyst</span></p>
+										<p><span class="title-s">Experience: </span> <span>5 Years 3 Months</span></p>
+										<p><span class="title-s">Address: </span> <span>Bengaluru, India</span></p>
 									  </div>
 									</div>
 								  </div>
 
 								<div class="skill-mf">
 									<p class="title-s">Skills</p>
-									<span>React</span> <span class="pull-right">80%</span>
+									<span>SQL</span> <span class="pull-right">95%</span>
 									<div class="progress">
-										<div class="progress-bar" role="progressbar" style="width: 80%;" aria-valuenow="80" aria-valuemin="0"
+										<div class="progress-bar" role="progressbar" style="width: 95%;" aria-valuenow="95" aria-valuemin="0"
 											aria-valuemax="100"></div>
 									</div>
 									
-									<span>Java</span> <span class="pull-right">70%</span>
-									<div class="progress">
-										<div class="progress-bar" role="progressbar" style="width: 70%" aria-valuenow="70" aria-valuemin="0"
-											aria-valuemax="100"></div>
-									</div>
-									
-									<span>Python</span> <span class="pull-right">70%</span>
-									<div class="progress">
-										<div class="progress-bar" role="progressbar" style="width: 70%" aria-valuenow="70" aria-valuemin="0"
-											aria-valuemax="100"></div>
-									</div>
-									
-									<!-- <span>Statistical Analysis</span> <span class="pull-right">85%</span>
+									<span>PYTHON</span> <span class="pull-right">85%</span>
 									<div class="progress">
 										<div class="progress-bar" role="progressbar" style="width: 85%" aria-valuenow="85" aria-valuemin="0"
 											aria-valuemax="100"></div>
-									</div> -->
+									</div>
 									
-									<span>Linux</span> <span class="pull-right">80%</span>
+									<span>Data Visualization</span> <span class="pull-right">90%</span>
+									<div class="progress">
+										<div class="progress-bar" role="progressbar" style="width: 90%" aria-valuenow="90" aria-valuemin="0"
+											aria-valuemax="100"></div>
+									</div>
+									
+									<span>Statistical Analysis</span> <span class="pull-right">85%</span>
+									<div class="progress">
+										<div class="progress-bar" role="progressbar" style="width: 85%" aria-valuenow="85" aria-valuemin="0"
+											aria-valuemax="100"></div>
+									</div>
+									
+									<span>Machine Learning</span> <span class="pull-right">80%</span>
 									<div class="progress">
 										<div class="progress-bar" role="progressbar" style="width: 80%" aria-valuenow="80" aria-valuemin="0"
 											aria-valuemax="100"></div>
@@ -267,15 +270,17 @@
 								<h1 class="big">About</h1>
 								<h2 class="mb-4">About Me</h2>
 								
-								<p>With a passion for full-stack development, I am a developer capable of designing and developing applications with in React and Node.js.</p>
+								<p>With over 5 years of comprehensive experience in the field of data science & analytics, accompanied by a bachelor's degree in engineering. 
+									Proficient in data analysis, statistical analysis, hypothesis testing, customer behaviour analysis, &amp; machine learning. 
+									Demonstrated success in leading impactful projects and providing effective mentorship.</p>
 								<ul class="about-info mt-4 px-md-0 px-2">
-									<li class="d-flex"><span>Profile:</span> <span>Software Developer</span></li>
-									<!-- <li class="d-flex"><span>Domain:</span> <span>Retail, Ecommerce, BFSI &amp; Digital Marketing</span></li> -->
-									<li class="d-flex"><span>Education:</span> <span>Masters of Computer Application</span></li>
-									<li class="d-flex"><span>Language:</span> <span>English, Hindi, Marathi</span></li>
-									<!-- <li class="d-flex"><span>BI Tools:</span> <span>Microsoft Power BI, Looker &amp; Tableau</span></li> -->
-									<li class="d-flex"><span>Other Skills:</span> <span>Cloud, Git &amp; Docker</span></li>
-									<li class="d-flex"><span>Interest:</span> <span>Reading Books, Gaming</span></li>
+									<li class="d-flex"><span>Profile:</span> <span>Data Science &amp; Analytics</span></li>
+									<li class="d-flex"><span>Domain:</span> <span>Retail, Ecommerce, BFSI &amp; Digital Marketing</span></li>
+									<li class="d-flex"><span>Education:</span> <span>Bachelor of Engineering</span></li>
+									<li class="d-flex"><span>Language:</span> <span>English, Hindi</span></li>
+									<li class="d-flex"><span>BI Tools:</span> <span>Microsoft Power BI, Looker &amp; Tableau</span></li>
+									<li class="d-flex"><span>Other Skills:</span> <span>Cloud, PySpark, Excel, Git, JIRA, Google Analytics &amp; SEO</span></li>
+									<li class="d-flex"><span>Interest:</span> <span>Traveling, Travel Photography, Teaching</span></li>
 									
 								</ul>
 							</div>
@@ -285,10 +290,10 @@
 						<div class="counter-wrap ftco-animate d-flex mt-md-3">
 							<div class="text">
 								<p class="mb-4">
-									<span class="number" data-number="5">0</span> <span>+</span>
+									<span class="number" data-number="30">0</span> <span>+</span>
 									<span>&nbsp; Projects completed</span>
 								</p>
-								<p><a href="https://www.linkedin.com/in/sanket-patil-93a851273/" class="btn btn-primary py-3 px-3" target="_blank">LinkedIn</a></p>
+								<p><a href="https://www.linkedin.com/in/rishabhnmishra/" class="btn btn-primary py-3 px-3">LinkedIn</a></p>
 							</div>
 						</div>
 					</div>
@@ -306,16 +311,16 @@
           <div class="col-md-10 heading-section text-center ftco-animate">
           	<h1 class="big big-2">Resume</h1>
             <h2 class="mb-4">Resume</h2>
-            <p> Software Engineering graduate with fundamental knowledge of software design, development, and testing. Prior experience in, Automation, designing, developing, and implementing. Strong inclination towards exploring, learning and understanding new technology.</p>
+            <p>Seasoned Senior Data Analyst with 5+ years of experience driving business strategies through data-driven insights. Proven expertise in data science, statistical analysis, machine learning algorithms and project management.</p>
           </div>
         </div>
 
-		<!-- <div class="row">
+		<div class="row">
 			<h1 class="big-4">Experience</h1>
 			<div class="underline"></div>
 		</div>
-		<br> -->
-<!-- 		
+		<br>
+		
 		<div class="row">
 				<div class="col-md-6">
 					<div class="resume-wrap ftco-animate">
@@ -351,7 +356,7 @@
 			</div>
 
 		<br>
-		<br> -->
+		<br>
 
 		<div class="row">
 			<h1 class="big-4">Education</h1>
@@ -362,27 +367,26 @@
 			<div class="row">
     			<div class="col-md-6">
     				<div class="resume-wrap ftco-animate">
-    					<span class="date">2023-2025</span>
-    					<h2>Masters of Computer Application</h2>
-    					<span class="position">Jagan Institute of Management Studies</span>
-    					<p class="mt-4">Grade: 8.1 CGPA</p>
+    					<span class="date">2014-2018</span>
+    					<h2>Bachelor of Engineering</h2>
+    					<span class="position">Visvesvaraya Technological University</span>
+    					<p class="mt-4">Grade: First class distinction.</p>
     				</div>
     			</div>
 
     			<div class="col-md-6">
     				<div class="resume-wrap ftco-animate">
-    					<span class="date">2020-2023</span>
-    					<h2>Bachelor of Computer Application</h2>
-    					<span class="position">Bharati Vidyapeeth Deemed University (Delhi)</span>
-    					<p class="mt-4">Grade: 8.81 CGPA</p>
+    					<span class="date">2012-2013</span>
+    					<h2>Higher Secondary School</h2>
+    					<span class="position">Army Public School</span>
+    					<p class="mt-4">Grade: First class distinction.</p>
     				</div>
 				</div>
     		</div>
 
     		<div class="row justify-content-center mt-5">
     			<div class="col-md-6 text-center ftco-animate">
-    				<p><a href="CV/Sanket Patil Resume.pdf" class="btn btn-primary py-4 px-5" target="_blank">Download CV</a></p>
-					<!-- <a href = "dosfiles.pdf" download >   -->
+    				<p><a href="#" class="btn btn-primary py-4 px-5">Download CV</a></p>
     			</div>
     		</div>
     	</div>
@@ -396,23 +400,22 @@
           <div class="col-md-7 heading-section text-center ftco-animate">
             <h1 class="big big-2">Projects</h1>
             <h2 class="mb-4">Projects</h2>
-            <!-- <p>Below are the sample Data Analytics projects on SQL, Python, Power BI & ML.</p> -->
-            <p>Below are the sample of Web Development projects .</p>
+            <p>Below are the sample Data Analytics projects on SQL, Python, Power BI & ML.</p>
           </div>
         </div>
         <div class="row d-flex">
           <div class="col-md-4 d-flex ftco-animate">
           	<div class="blog-entry justify-content-end">
-              <a href="https://github.com/SanketPatilofficial/Sip-Lumpsum-Calculator.git" class="block-20 zoom-effect" style="background-image: url('images/pro1.png');" target="_blank">
+              <a href="https://github.com/rishabhnmishra/SQL_Music_Store_Analysis/blob/main/Music_Store_Query.sql" class="block-20 zoom-effect" style="background-image: url('images/proj_1.jpg');">
               </a>
               <div class="text mt-3 float-right d-block">
 
-                <h3 class="heading"><a href="https://github.com/SanketPatilofficial/Sip-Lumpsum-Calculator.git" target="_blank">Sip & Lumpsum Calculator</a></h3>
-                <p>Mutual fund investors can use this calculator to figure out the estimated returns on their investments. </p> <!-- Before getting into the benefits of using this calculator, one must know the types of return for a lumpsum investment. -->
+                <h3 class="heading"><a href="https://github.com/rishabhnmishra/SQL_Music_Store_Analysis/blob/main/Music_Store_Query.sql">Digital Music Store Data Analysis using SQL</a></h3>
+                <p>Analyzed music store data using advanced SQL queires to identify gaps and increase the business growth.</p>
               </div>
             </div>
           </div>
-          <!-- <div class="col-md-4 d-flex ftco-animate">
+          <div class="col-md-4 d-flex ftco-animate">
           	<div class="blog-entry justify-content-end">
               <a href="https://github.com/rishabhnmishra/Python_Diwali_Sales_Analysis/blob/main/Diwali_Sales_Analysis.ipynb" class="block-20 zoom-effect" style="background-image: url('images/proj_2.jpg');">
               </a>
@@ -422,8 +425,8 @@
                 <p>Performed exploratory data analysis on diwali sales data using Python to improve the customer experience.</p>
               </div>
             </div>
-          </div> -->
-          <!-- <div class="col-md-4 d-flex ftco-animate">
+          </div>
+          <div class="col-md-4 d-flex ftco-animate">
           	<div class="blog-entry">
               <a href="https://github.com/rishabhnmishra/Madhav_Store_Analysis_PowerBI/blob/main/Madhav%20Store%20dashboard.jpg" class="block-20 zoom-effect" style="background-image: url('images/proj_3.jpg');">
               </a>
@@ -433,11 +436,11 @@
                 <p>Designed a power bi dashboard for Madhav Store to track and analyze the online sales data acorss India.</p>
               </div>
             </div>
-          </div> -->
+          </div>
         </div>
 	<br>
 		<!-- added justify-content-center to center align the last two projects -->
-		<!-- <div class="row d-flex justify-content-center">  
+		<div class="row d-flex justify-content-center">  
 			<div class="col-md-4 d-flex ftco-animate">
 				<div class="blog-entry justify-content-end">
 				<a href="https://github.com/rishabhnmishra/sales_forecasting/tree/main" class="block-20 zoom-effect" style="background-image: url('images/proj_4.jpg');">
@@ -460,15 +463,12 @@
 				</div>
 			  </div>
 			</div>
-		 </div> -->
+		 </div>
 	  </div>
     </section>
 
-
-
-	
 	<section class="ftco-section ftco-no-pt ftco-no-pb ftco-counter img" id="section-counter">
-      <!-- <div class="container">
+      <div class="container">
 		<div class="row d-md-flex align-items-center">
           <div class="col-md d-flex justify-content-center counter-wrap ftco-animate">
             <div class="block-18">
@@ -503,24 +503,20 @@
             </div>
           </div>
         </div>
-      </div> -->
+      </div>
 	
-	  <!-- Achievements Projects   Mentored Students  Cups of coffee -->
-
-
-
-	  <div class="ftco-section ftco-hireme img margin-top" style="background-image: url(images/new.jpg)">
+	  <div class="ftco-section ftco-hireme img margin-top" style="background-image: url(images/bg_1.jpg)">
 			<!-- <div class="container"> -->
 				<div class="row justify-content-center">
 					<div class="col-md-7 ftco-animate text-center">
 						<h2>More projects on<span> Github  </span> </h2>
-						<!-- <div class="heading"> <h4> I love to solve business problems &amp; uncover hidden data stories </h4> -->
+						<div class="heading"> <h4> I love to solve business problems &amp; uncover hidden data stories </h4>
 						<br>
-						<p><a href="https://github.com/SanketPatilofficial" class="btn btn-primary py-3 px-5" target="_blank">GitHub</a></p>
+						<p><a href="https://github.com/rishabhnmishra" class="btn btn-primary py-3 px-5">GitHub</a></p>
 						</div>
 					</div>
 				</div>
-		</div>
+			<!-- </div> -->
 		</div>
 	</section>
 
@@ -543,7 +539,7 @@
           			<span class="icon-map-signs"></span>
           		</div>
           		<h3 class="mb-4">Address</h3>
-	            <p>Delhi, India</p>
+	            <p>Bengaluru, India</p>
 	          </div>
           </div>
           <div class="col-md-6 col-lg-3 d-flex ftco-animate">
@@ -552,7 +548,7 @@
           			<span class="icon-phone2"></span>
           		</div>
           		<h3 class="mb-4">Contact Number</h3>
-	            <p><a href="tel://0101010101">+ 91 858 5903 858</a></p>
+	            <p><a href="tel://0101010101">+ 0 101 0101 101</a></p>
 	          </div>
           </div>
           <div class="col-md-6 col-lg-3 d-flex ftco-animate">
@@ -561,7 +557,7 @@
           			<span class="icon-paper-plane"></span>
           		</div>
           		<h3 class="mb-4">Email Address</h3>
-	            <p><a href="mailto:info@yoursite.com">work.sanketpatil@gmail.com</a></p>
+	            <p><a href="mailto:info@yoursite.com">conctact@domainname.com</a></p>
 	          </div>
           </div>
           <div class="col-md-6 col-lg-3 d-flex ftco-animate">
@@ -570,7 +566,7 @@
           			<span class="icon-globe"></span>
           		</div>
           		<h3 class="mb-4">Download Resume</h3>
-	            <p><a href="CV/Sanket Patil Resume.pdf" target="_blank">Resume Link</a></p>
+	            <p><a href="#">resumelink</a></p>
 	          </div>
           </div>
 
@@ -579,42 +575,17 @@
 			<br>
 			<div class="row justify-content-center">
 				<div class="col-md-7 ftco-animate text-center">
-					<h2>Have a<span> Question?  </span> <a href="https://docs.google.com/forms/d/e/1FAIpQLSfSLe-vt9DWr_Oe_GlodCT_1vj4ikYu9z-oYnYGTVVMrdvq3w/viewform?usp=sf_link" class="btn btn-primary py-3 px-5" target="_blank">Click Here</a> </h2>
+					<h2>Have a<span> Question?  </span> <a href="https://forms.gle/uLaTShUKXraAvHJ77" class="btn btn-primary py-3 px-5">Click Here</a> </h2>
 				</div>
 			</div>
 				<br>
 					<ul class="ftco-footer-social list-unstyled d-flex justify-content-center align-items-center mb-0">
-					  <br>
-					  <br>
-						<li class="ftco-animate normal-txt" style="align-items: center; margin-right: 18%; font-size: 25px;">Find me on &nbsp;  </li>
-					 
-					  <!-- <li class="ftco-animate"><a href="https://www.youtube.com/@RishabhMishraOfficial"><span class="icon-youtube"></span></a></li> -->
-					  <!-- <li class="ftco-animate"><a href="https://www.linkedin.com/in/sanket-patil-93a851273/" target="_blank"><span class="icon-linkedin"></span></a></li>   -->
-					  <!-- <li class="ftco-animate"><a href="https://twitter.com/patilsanket7234" target="_blank"><span class="icon-twitter"></span></a></li> -->
-					  <!-- <li class="ftco-animate"><a href="https://twitter.com/rishabhnmishra" target="_blank"><span class="icon-facebook"></span></a></li> -->
-				      <!-- <li class="ftco-animate"><a href="https://www.instagram.com/p_sanket85/" target="_blank"><span class="icon-instagram"></span></a></li> -->
-					<br>
-					<div class="social">
-        
-						<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
-					
-						<ul>
-						  <li>
-							<a href="https://www.linkedin.com/in/sanket-patil-93a851273/" target="_blank">
-							  <i class="fab fa-linkedin-in icon"></i>    </a>
-							</li>
-						  <li>
-							<a href="https://twitter.com/patilsanket7234" target="_blank"><i class="fab fa-twitter icon"></i></a>
-						  </li>
-						  <li>
-							<a href="https://www.instagram.com/p_sanket85/" target="_blank"><i class="fab fa-instagram icon"></i></a></li>
-							<!-- <li> -->
-							  <!-- <a href="work.sanketpatil@gmail.com" target="_blank"><i class="fab fa-github icon"></i></a></li>  -->
-						</ul>
-							
-							
-					</div>
-					
+					  <li class="ftco-animate normal-txt">Find me on  </li>
+					  <li class="ftco-animate"><a href="https://www.youtube.com/@RishabhMishraOfficial"><span class="icon-youtube"></span></a></li>
+					  <li class="ftco-animate"><a href="https://www.linkedin.com/in/rishabhnmishra/"><span class="icon-linkedin"></span></a></li>  
+					  <li class="ftco-animate"><a href="https://twitter.com/rishabhnmishra"><span class="icon-twitter"></span></a></li>
+					  <li class="ftco-animate"><a href="https://twitter.com/rishabhnmishra"><span class="icon-facebook"></span></a></li>
+				      <li class="ftco-animate"><a href="https://www.instagram.com/rishabhnmishra/"><span class="icon-instagram"></span></a></li>
 					</ul>
 				<br>
 		   </div>
@@ -630,7 +601,7 @@
 			<div class="col-md-12 text-center">
   
 			  <p><!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
-	<!-- Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved | This template is made with <i class="icon-heart color-danger" aria-hidden="true"></i> by <a href="https://colorlib.com" target="_blank">Colorlib</a> -->
+	Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved | This template is made with <i class="icon-heart color-danger" aria-hidden="true"></i> by <a href="https://colorlib.com" target="_blank">Colorlib</a>
 	<!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. --></p>
 			</div>
 		  </div>
@@ -639,43 +610,8 @@
 
 
   <!-- loader -->
-<div id="ftco-loader" class="show fullscreen">
-	<svg class="circular" width="48px" height="48px">
-		<circle class="path-bg" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke="#eeeeee"/>
-		<circle class="path" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke-miterlimit="10" stroke="rgba(156,220,254,255)"/>
-	</svg>
-</div>
+  <div id="ftco-loader" class="show fullscreen"><svg class="circular" width="48px" height="48px"><circle class="path-bg" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke="#eeeeee"/><circle class="path" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke-miterlimit="10" stroke="#F96D00"/></svg></div>
 
-<!-- Web developer and designer -->
-<script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
-
-
-<script>
-	var typed; // Variable to store Typed.js instance
-
-	function initializeTyped() {
-		// Destroy the existing Typed instance if it exists
-		if (typed) {
-			typed.destroy();
-		}
-		// Create a new Typed instance
-		typed = new Typed('#element', {
-			strings: ['Web Developer', '&amp; Web Designer'],
-			typeSpeed: 75,
-		});
-	}
-
-	// Initialize Typed.js animation
-	initializeTyped();
-
-	// Reload the animation every 6 seconds
-	setInterval(function() {
-		// Clear the element's content
-		document.getElementById('element').innerHTML = '';
-		// Reinitialize Typed.js animation
-		initializeTyped();
-	}, 6000);
-</script>
 
   <script src="js/jquery.min.js"></script>
   <script src="js/jquery-migrate-3.0.1.min.js"></script>
